@@ -1,0 +1,7 @@
+
+{
+    "searchTerm": "Thor Hammer",
+    "expectedCaption": "Searched for: Thor Hammer",
+    "expectedResultCount": 1,
+    "expectedProductName": "Thor Hammer"
+}

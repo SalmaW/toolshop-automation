@@ -1,0 +1,16 @@
+
+{
+    "firstName": "Test",
+    "lastName": "Customer",
+    "dateOfBirth": "2001-01-01",
+    "country": "US",
+    "postalCode": "10001",
+    "houseNumber": "42",
+    "street": "101 Testing Way",
+    "city": "New York",
+    "state": "New York",
+    "phone": "5555555555",
+    "emailPrefix": "toolshop.trainee",
+    "emailDomain": "test.com",
+    "password": "Pass$w0rd1"
+}

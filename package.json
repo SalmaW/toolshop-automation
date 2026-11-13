@@ -1,0 +1,20 @@
+{
+  "name": "toolshop-automation",
+  "version": "1.0.0",
+  "description": "Playwright + JavaScript (POM) automation of the practicesoftwaretesting.com purchase flow",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test tests/ui",
+    "test:e2e": "playwright test tests/e2e",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6"
+  }
+}

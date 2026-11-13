@@ -1,0 +1,7 @@
+{
+  "searchTerm": "Thor Hammer",
+  "productName": "Thor Hammer",
+  "expectedToast": "Product added to shopping cart.",
+  "expectedCartCount": 1,
+  "expectedQuantity": 1
+}

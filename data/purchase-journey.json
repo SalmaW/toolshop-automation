@@ -1,0 +1,21 @@
+{
+  "email": "toolshop.trainee.5113d58f-4f62-4374-bbfa-0dcc0d077f75@test.com",
+  "password": "Pass$w0rd1",
+  "customerName": "Test Customer",
+  "searchTerm": "Thor Hammer",
+  "expectedCaption": "Searched for: Thor Hammer",
+  "expectedResultCount": 1,
+  "expectedProductName": "Thor Hammer",
+  "productName": "Thor Hammer",
+  "expectedToast": "Product added to shopping cart.",
+  "quantity": 1,
+  "paymentMethod": "cash-on-delivery",
+  "billingAddress": {
+    "country": "US",
+    "postalCode": "10001",
+    "houseNumber": "42",
+    "street": "101 Testing Way",
+    "city": "New York",
+    "state": "New York"
+  }
+}
