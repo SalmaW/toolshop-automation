@@ -7,7 +7,6 @@ const { ProductPage } = require("../../pages/ProductPage");
 const { NavBar } = require("../../pages/NavBar");
 const { CheckoutPage } = require("../../pages/CheckoutPage");
 
-const loginData = require("../../data/login.json");
 const cartData = require("../../data/cart.json");
 
 test.describe("Cart", () => {
@@ -18,7 +17,7 @@ test.describe("Cart", () => {
 
     await loginPage.goto();
     await loginPage.expectLoginFormVisible();
-    await loginPage.login(loginData.email, loginData.password);
+    await loginPage.login(cartData.email, cartData.password);
     await accountPage.expectAccountPage();
   });
 

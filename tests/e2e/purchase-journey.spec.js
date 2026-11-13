@@ -69,7 +69,9 @@ test.describe("Purchase journey", () => {
 
       await checkoutPage.selectPaymentMethod(journeyData.paymentMethod);
       await checkoutPage.finishPayment();
-      await checkoutPage.expectPaymentSuccessful();
+      await checkoutPage.expectPaymentSuccessful(
+        journeyData.expectedPaymentMessage,
+      );
     });
 
     await test.step("Order confirmed with an invoice number", async () => {

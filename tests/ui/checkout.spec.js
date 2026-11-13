@@ -58,7 +58,6 @@ test.describe("Checkout", () => {
       await checkoutPage.expectBillingStepVisible();
       await checkoutPage.expectBillingAddressPrefilled(checkoutData.billingAddress);
 
-      // House number is not prefilled on this site, so it is entered here
       await checkoutPage.completeBillingAddress(checkoutData.billingAddress);
     });
 
@@ -68,7 +67,9 @@ test.describe("Checkout", () => {
 
       await checkoutPage.selectPaymentMethod(checkoutData.paymentMethod);
       await checkoutPage.finishPayment();
-      await checkoutPage.expectPaymentSuccessful();
+      await checkoutPage.expectPaymentSuccessful(
+        checkoutData.expectedPaymentMessage,
+      );
     });
 
     let invoiceNumber;

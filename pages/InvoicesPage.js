@@ -3,8 +3,6 @@ const { expect } = require("@playwright/test");
 class InvoicesPage {
   constructor(page) {
     this.page = page;
-
-    this.invoiceRows = page.getByRole("row");
   }
 
   // Assertions

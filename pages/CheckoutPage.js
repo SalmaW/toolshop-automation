@@ -108,22 +108,19 @@ class CheckoutPage {
     await expect(this.street).toBeVisible();
   }
 
-  // Verify fields populated from the saved address
+  // Verify fields are prefilled from the user's saved address
   async expectBillingAddressPrefilled(address) {
     await expect(this.country).toHaveValue(address.country);
     await expect(this.postalCode).toHaveValue(address.postalCode);
-  }
-
-  // Enter missing house number and verify address
-  async completeBillingAddress(address) {
-    await this.houseNumber.fill(address.houseNumber);
-
-    await expect(this.houseNumber).toHaveValue(address.houseNumber);
-
-    // These fields are populated automatically
     await expect(this.street).toHaveValue(address.street);
     await expect(this.city).toHaveValue(address.city);
     await expect(this.state).toHaveValue(address.state);
+  }
+
+  // House number is not prefilled on this site, so it is entered here
+  async completeBillingAddress(address) {
+    await this.houseNumber.fill(address.houseNumber);
+    await expect(this.houseNumber).toHaveValue(address.houseNumber);
   }
 
   async expectPaymentStepVisible() {
@@ -131,14 +128,8 @@ class CheckoutPage {
     await expect(this.finishButton).toBeVisible();
   }
 
-  async expectPaymentMethodSelected(method) {
-    await expect(this.paymentMethod).toHaveValue(method);
-  }
-
-  async expectPaymentSuccessful() {
-    await expect(this.paymentSuccessMessage).toContainText(
-      "Payment was successful",
-    );
+  async expectPaymentSuccessful(message) {
+    await expect(this.paymentSuccessMessage).toContainText(message);
   }
 
   async expectOrderConfirmation() {

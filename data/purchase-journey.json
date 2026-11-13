@@ -8,6 +8,7 @@
   "expectedProductName": "Thor Hammer",
   "productName": "Thor Hammer",
   "expectedToast": "Product added to shopping cart.",
+  "expectedPaymentMessage": "Payment was successful",
   "quantity": 1,
   "paymentMethod": "cash-on-delivery",
   "billingAddress": {

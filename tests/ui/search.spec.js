@@ -4,7 +4,6 @@ const { LoginPage } = require("../../pages/LoginPage");
 const { AccountPage } = require("../../pages/AccountPage");
 const { HomePage } = require("../../pages/HomePage");
 
-const loginData = require("../../data/login.json");
 const searchData = require("../../data/search.json");
 
 test.describe("Search", () => {
@@ -15,7 +14,7 @@ test.describe("Search", () => {
 
     await loginPage.goto();
     await loginPage.expectLoginFormVisible();
-    await loginPage.login(loginData.email, loginData.password);
+    await loginPage.login(searchData.email, searchData.password);
 
     // Wait until login has really finished before navigating away
     await accountPage.expectAccountPage();
