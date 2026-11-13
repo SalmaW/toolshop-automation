@@ -51,6 +51,9 @@ npx playwright test --workers=4
 | TC-06 | `tests/ui/checkout.spec.js`       | Log in + add Thor Hammer       | Every checkout step, invoice number, invoice in My invoices |
 | TC-07 | `tests/e2e/purchase-journey.spec.js` | none                        | Full journey in `test.step()`s, order confirmed with invoice |
 
+<img width="743" height="607" alt="image" src="https://github.com/user-attachments/assets/160621b6-15fc-4cbc-a485-1c0c53f2a7f4" />
+
+
 ## Project structure
 
 ```
